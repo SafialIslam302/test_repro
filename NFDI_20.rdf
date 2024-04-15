@@ -1,0 +1,1817 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/"
+     xml:base="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM">
+        <owl:versionIRI rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/0.0.1"/>
+        <dc:creator>Jan Bernoth</dc:creator>
+        <dc:title xml:lang="en">Good Practices in Research Data/Software Management</dc:title>
+        <dct:contributor>Firas Al Laban</dct:contributor>
+        <dct:contributor>Ulrike Lucke</dct:contributor>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-12-22</dct:created>
+        <dct:description xml:lang="en">This ontology is designed to provide an overview of the interview series focusing on good practices in research data and software management.</dct:description>
+        <dct:license>https://creativecommons.org/licenses/by/4.0/</dct:license>
+        <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
+        <vann:preferredNamespacePrefix>gp</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">This ontology is designed to provide an overview of the interview series focusing on lighthouse projects in research data and software management.</rdfs:comment>
+        <rdfs:label xml:lang="en">Good Practices RD/SM</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/interviewDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/interviewDate"/>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/partOfQuestionnaire -->
+
+    <owl:AnnotationProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/partOfQuestionnaire">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Question_Block"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questions -->
+
+    <owl:AnnotationProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questions"/>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/usedQuestionnaire -->
+
+    <owl:AnnotationProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/usedQuestionnaire">
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Questionnaire"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/organisation -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/organisation">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jbernoth/ontologies/2023/11/RDM-CS/Institution"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/academicField -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/academicField">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Academic_Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/hasQuestionblock -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/hasQuestionblock">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Questionnaire"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Question_Block"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/presentedInLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/presentedInLanguage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+                    <rdf:Description rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Resource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/presentsProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/presentsProject">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/proposedStakeholder -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/proposedStakeholder">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Stakeholder"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/representedByMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/representedByMaterial">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Raw"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/storedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/storedIn">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Resource"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Storage_Destination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/summarisedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/summarisedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/usedQuestionnaire -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/usedQuestionnaire">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/wasCreatedForProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/wasCreatedForProject">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/wasInterviewedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/wasInterviewedIn">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+        <rdfs:range rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/organisation -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/organisation">
+        <rdfs:domain rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Academic_Field -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Academic_Field">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.46218468960215</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">285.87640427019466</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">The research field in which the focus of the research and scholarly activities are made.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Artist -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Artist">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Created_Material -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Created_Material">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Resource"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">70.5659924626824</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">36.12942757765376</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Cutted_Video -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Cutted_Video">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Created_Material"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">177.98531564644915</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">149.90618854186886</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Infrastructure -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Project"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">258.46151950097175</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.2988159781628</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Institution -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Institution">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">170.299834110246</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">218.4195013399895</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">An institution refers to an academic organisation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.3432751513222128</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.263800635620866</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">This class represents the interview itself, which was conducted to ask a person questions about their lighthouse project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_Project -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_Project">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">240.08794900184802</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">268.2051589240513</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">The interview project is designed based on the organizers&apos; perspective of the interviews. If the interviews were conducted, they were also financed. This project relies on the funding received for the interviews.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Junior_Researcher -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Junior_Researcher">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">231.68064115729302</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">230.47166241147713</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Language -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Language">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">449.73327653309786</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.458562531614888</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <dc:title xml:lang="en">Language of the content</dc:title>
+        <rdfs:comment>This class will be used to classify the languag in which the content is presented.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Outlet -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Outlet">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Created_Material"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">135.26133521807216</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">240.61959818851952</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">218.44449412604047</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">235.82407808647673</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">This class represents individuals in academia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Professor -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Professor">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">210.1716180033348</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">163.85891355935718</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Project -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Project">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">205.0915822229173</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">37.835325644311595</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">This instance stands for lighthouse projects in research data/software management.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Question_Block -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Question_Block">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">102.8829527048446</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">100.37187201890063</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">Part of the questionnaire in which a specific topic is further discussed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Questionnaire -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Questionnaire">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">181.28783494404377</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">116.82870192091595</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">The questionnaire used for the interview.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Raw -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Raw">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Resource"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">288.01613203176305</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">122.28954894978257</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Data_Project -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Data_Project">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Project"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">469.7942466192765</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">130.2192363296459</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Data_Service_Employer -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Data_Service_Employer">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">509.53334296743253</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.1600769670915</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Software_Project -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Software_Project">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Project"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">235.1583189629863</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">171.54266989291074</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Resource -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Resource">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">129.52637858104248</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">67.08253709857134</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">A resource represents the materialized form of the interview. It can either be the raw content or a structured material derived from the raw content.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Scientific_Society -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Scientific_Society">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Institution"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">46.01791350271041</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">51.12818883031638</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q31855"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Raw"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">13.377497165162323</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">281.22394785865487</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>The participant recorded herself or himself.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Senior_Researcher -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Senior_Researcher">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Person"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">33.480033256878635</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">107.64478300950367</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Stakeholder -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Stakeholder">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">660.3292342791183</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">189.97314700389228</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">This class is intended for individuals, groups, or organizations that could enhance research data or software management.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Storage_Destination -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Storage_Destination">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">183.70369459863326</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">209.66210498326228</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <dc:title xml:lang="en">Storage Destination</dc:title>
+        <rdfs:comment>This class stands for the the destination in which the particular resource is stored.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Studio_Record -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Studio_Record">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Raw"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.34280913020274</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">176.36885644334393</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>Interview was recorded in ZIM Studio.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Created_Material"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">131.55840235591825</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">146.3183592447867</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/University -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/University">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Institution"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">141.66842474320146</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.07491763636276</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/wiki/Q3918"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Website -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Website">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Created_Material"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.30885546562948</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">232.9642714443607</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record -->
+
+    <owl:Class rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record">
+        <rdfs:subClassOf rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Raw"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">79.21120136032448</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">136.09057329176252</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+        <rdfs:comment>The Zoom call was recorded.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/ALL -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/ALL">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Professor"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computer_Science"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_ALL"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UP"/>
+        <foaf:mbox>anna-lena.lamprecht@uni-potsdam.de</foaf:mbox>
+        <foaf:name>Anna-Lena Lamprecht</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Box.UP -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Box.UP">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Storage_Destination"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://boxup.uni-potsdam.de/</dc:identifier>
+        <dc:title>Box.UP</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computational_Literary_Studies -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computational_Literary_Studies">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Academic_Field"/>
+        <dc:title xml:lang="en">Computational Literary Studies</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computer_Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computer_Science">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Academic_Field"/>
+        <dc:title xml:lang="en">Computer Science</dc:title>
+        <dc:title xml:lang="de">Informatik</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DIPF -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DIPF">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Scientific_Society"/>
+        <dc:title xml:lang="de">Deutsches Institut für Internationale Pädagogische Forschung</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Data_Service_Employer"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computational_Literary_Studies"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_DS"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DIPF"/>
+        <foaf:name>Daniel Schiffner</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DS_Self_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DS_Self_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=5234fac5-f283-4438-ae5b-b0ce00d87760</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Daniel Schiffner</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DS_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DS_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=5cf5c88e-880f-4e9d-b7ed-b0ce00e13848</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Daniel Schiffner</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/EMBL-EBI -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/EMBL-EBI">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Scientific_Society"/>
+        <rdfs:comment xml:lang="de">European Bioinformatics Institute</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/English -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/English">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Establish_RDM -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Establish_RDM">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Question_Block"/>
+        <dc:title xml:lang="en">Establishing RDM</dc:title>
+        <dc:title xml:lang="de">Etablierung von FDM</dc:title>
+        <partOfQuestionnaire rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</partOfQuestionnaire>
+        <questions xml:lang="de">1. In welchem Projekt, würdest du sagen, ist Forschungsdaten- und Forschungssoftwaremanagement gut etabliert?
+Mögliche Kritierien, um als gut etabliert zu gelten:
+  a. Forschungsdatenlebenszyklus konnte komplett eingehalten werden
+  b. Forschungsdaten wurden von einem eigenen/fremden Projekt wiederverwendet
+  c. Forschungsdaten wurden publiziert
+2. Wie wird dadurch deine Forschung beeinflusst?</questions>
+        <questions xml:lang="en">1. Which of your research projects do you consider well-established research data management?
+Criteria for well-established research data management:
+  a. research data life-cycle was completely fulfilled
+  b. research data was reused in another project (own projects, other projects)
+  c. data were published with an article
+2. How does this affect the research results and maybe the efforts in your research projects?</questions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/GWDG -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/GWDG">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Scientific_Society"/>
+        <dc:title xml:lang="de">Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Git.UP -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Git.UP">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Storage_Destination"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://gitup.uni-potsdam.de/</dc:identifier>
+        <dc:title>Git.UP</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Junior_Researcher"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computational_Literary_Studies"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_IB"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UP"/>
+        <foaf:name>Ingo Börner</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB_Self_Record_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB_Self_Record_1">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=e70425b6-7726-4dfb-9e23-b0c400f2c2f1</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Ingo Börner</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB_Self_Record_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB_Self_Record_2">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier>https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=d0408a4a-894b-4035-9612-b0c400fab99d</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Ingo Börner</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=32ae2dcc-128f-4257-9193-b0ce00ed2acb</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Ingo Börner</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Improve_RDM -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Improve_RDM">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Question_Block"/>
+        <dc:title xml:lang="en">Improving RDM</dc:title>
+        <dc:title xml:lang="de">Verbesserung von FDM</dc:title>
+        <partOfQuestionnaire rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</partOfQuestionnaire>
+        <questions xml:lang="en">1. How to improve the services for research data/software management to fit the needs of researchers?
+  i. What is not working well right now?
+  ii. Who could improve this?
+  2. What could be a message to your younger self: how would you prepare better for these current challenges?</questions>
+        <questions xml:lang="de">1.Wie sollten Services für Forschungsdatenmangement verbessert werden?
+  i. Was sind bisherige Ärgernisse oder Hürden?
+  ii. Wer könnte das angehen?
+2. Würdest du jetzt nochmal studieren, worauf würdest du selbst mehr wert legen?</questions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Information_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Information_System">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Academic_Field"/>
+        <dc:title xml:lang="en">Information System</dc:title>
+        <dc:title xml:lang="de">Informationssystem</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_ALL -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_ALL">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Anna-Lena Lamprecht</dc:title>
+        <interviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-29T15:00:00</interviewDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_DS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DS_Self_Record"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/DS_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Daniel Schiffner</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_IB -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_IB">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB_Self_Record_1"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB_Self_Record_2"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/IB_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title>Interview mit Ingo Börner</dc:title>
+        <interviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-22T14:00:00</interviewDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_JJ -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_JJ">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/English"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JJ_Self_Record"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JJ_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Julia Jannsen</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_JK -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_JK">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Josie König</dc:title>
+        <interviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-29T14:00:00</interviewDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_MH -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_MH">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/English"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MH_Self_Record"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MH_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Melissa Harrison</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_MRM -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_MRM">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/English"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MRM_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Menare Royal Mabakeng</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_MS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_MS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_1"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_2"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_3"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_4"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_5"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Michael Striewe</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_RDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_RDC">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/English"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDC_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Roberto di Cosmo</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_RY -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_RY">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RY_Self_Record"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RY_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Ramin Yahyapour</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_SS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_SS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SS_Self_Record"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SS_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Sven Stickroth</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_TD -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_TD">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Deutsch"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Tim Dietrich</dc:title>
+        <interviewDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-11-29T13:00:00</interviewDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_TH -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_TH">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview"/>
+        <presentedInLanguage rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/English"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TH_Self_Record"/>
+        <representedByMaterial rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TH_Zoom_Record"/>
+        <usedQuestionnaire rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01"/>
+        <wasCreatedForProject rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023"/>
+        <dc:title xml:lang="de">Interview mit Trent Hare</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Intro_Person -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Intro_Person">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Question_Block"/>
+        <dc:title xml:lang="en">Introduction of the interviewee and his/her research</dc:title>
+        <dc:title xml:lang="de">Vorstellung des Interviewpartners und dessen Forschung</dc:title>
+        <partOfQuestionnaire rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</partOfQuestionnaire>
+        <questions xml:lang="en">1. Could you please give us an overview of your research discipline and activities?
+2. How are these related to the principles of research data/software management?</questions>
+        <questions xml:lang="de">1. Könntest du mir bitte einen Überblick über deine aktuelle Tätigkeit und Forschung geben?
+2. In wie fern ist deine Tätigkeit verbunden mit Forschungsdaten und -software Management?</questions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JJ -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JJ">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Artist"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Information_System"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_JJ"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SJJ"/>
+        <foaf:name>Julia Jannsen</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JJ_Self_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JJ_Self_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=acf8e7e7-e30c-4ebe-b26c-b0c700b5853c</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Julia Jannsen</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JJ_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JJ_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=a54b3581-3c8d-4217-b5d8-b0ce00ea8165</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Julia Jannsen</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JK -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/JK">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Junior_Researcher"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Mathematics"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_JK"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UP"/>
+        <foaf:mbox>josie.koenig@uni-potsdam.de</foaf:mbox>
+        <foaf:name>Josie König</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/LMU -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/LMU">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/University"/>
+        <dc:title xml:lang="en">Ludwig Maximilian University of Munich</dc:title>
+        <dc:title xml:lang="de">Ludwig-Maximilians-Universität München</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MH -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MH">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Data_Service_Employer"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Mathematics"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_MH"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/EMBL-EBI"/>
+        <foaf:name>Melissa Harrison</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MH_Self_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MH_Self_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=481977c7-157c-4ed1-9a16-b0c400d2b3ac</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Melissa Harrison</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MH_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MH_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=abca988c-ab80-4b71-b168-b0cf009c3e9c</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Melissa Harrison</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MRM -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MRM">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Junior_Researcher"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Mathematics"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_MRM"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/NUST"/>
+        <foaf:name>Menare Royal Mabakeng</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MRM_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MRM_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=8f96ea3d-3ce4-49ae-ade2-b0ce00ed31ea</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Menare Royal Makabi</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Senior_Researcher"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computer_Science"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_MS"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UDE"/>
+        <foaf:name>Michael Striewe</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_1">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=586824dc-7c8c-4f34-9259-b0cb00b6f32f</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Michael Strieve</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_2">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=9a8e5b82-7ec5-42be-8330-b0cb00b8c759</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Michael Strieve</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_3">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=9885070c-e494-4f37-a3d7-b0cb00b8c79e</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Michael Strieve</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_4">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=dbf1d7b1-e666-481c-a354-b0cb00b8c7c0</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Michael Strieve</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Self_Record_5">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=309c3c0e-53ac-4278-8bcb-b0cb00b8c77d</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Michael Strieve</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/MS_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=71fc5682-49a9-4a12-8cfa-b0cf009f1e40</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Michael Strieve</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Mathematics -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Mathematics">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Academic_Field"/>
+        <dc:title xml:lang="en">Mathematics</dc:title>
+        <dc:title xml:lang="de">Mathematik</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/NUST -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/NUST">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/University"/>
+        <dc:title xml:lang="en">Namibia University of Science and Technology</dc:title>
+        <dc:title xml:lang="de">Namibia Universität für Wissenschaft und Technologie</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Physics -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Physics">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Academic_Field"/>
+        <dc:title xml:lang="en">Physics</dc:title>
+        <dc:title xml:lang="de">Physik</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Practice_RDM -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Practice_RDM">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Question_Block"/>
+        <dc:title xml:lang="de">Anwendung von FDM:</dc:title>
+        <dc:title xml:lang="en">Practicing RDM</dc:title>
+        <partOfQuestionnaire rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</partOfQuestionnaire>
+        <questions xml:lang="de">1. Welche Mechanismen kamen für das FDM in dem Projekt zum Einsatz?
+(Zum Beispiel: Wiedervewendung von (Meta-)daten, open software/Werkzeuge für und von anderen FDM Projekten, genutzte Repositorien)
+2. Wie können andere Projekte von deiner Arbeit profitieren?</questions>
+        <questions xml:lang="en">1. What methods do you prefer to best practice the FAIR principles in your research projects?
+(For example: reusing other meta-data, open software/tools from other RDM projects in your research, 	usage of repositories)
+2. How do other projects benefit from the research data management you established in your project?</questions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDC">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Professor"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computer_Science"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_RDC"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UPC"/>
+        <foaf:name>Roberto di Cosmo</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDC_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDC_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=f56db9fe-0dfb-4369-9a15-b0ce00d5aa0e</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Roberto di Cosmo</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RDM_CS_2023">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_Project"/>
+        <dc:title xml:lang="en">Research Data Management - Case Studies (RDM-CS)</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RD_Project_DraCor -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RD_Project_DraCor">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Data_Project"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dracor.org</dc:identifier>
+        <dc:title>Research Data Project &quot;DraCor&quot;</dc:title>
+        <rdfs:comment>DraCor ist ein lebendiger Korpus, welcher offene und frei lizenzierste Dramentexte integriert. Die Texte werden aufbereitet und annotiert. Mittels API werden verschiedene Möglichkeiten gegeben, um in den Korpus Einblicke zu bekommen. Zusätzlich gibt es eine Seite, welche die Datensätze darstellt und einen zusätzlichen Zugang bietet, um die Datenbasis explorativ zu erkunden.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RY -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RY">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Professor"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computer_Science"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_RY"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/GWDG"/>
+        <foaf:name>Ramin Yahyapour</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RY_Self_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RY_Self_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=1aac90d2-36c9-4a11-b290-b0cf0096afac</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Ramin Yahyapour</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RY_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/RY_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=64774d56-a605-4a3b-9f83-b0cf009c22a3</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Ramin Yahyapour</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SJJ -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SJJ">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Scientific_Society"/>
+        <dc:title xml:lang="de">Studio Julia Janssen</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Professor"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Computer_Science"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_SS"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/LMU"/>
+        <foaf:name>Sven Stickroth</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SS_Self_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SS_Self_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=be9480e2-52f1-494e-8e7d-b0cb009e6873</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Sven Stickroth</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SS_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/SS_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=71fc5682-49a9-4a12-8cfa-b0cf009f1e40</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Sven Stickroth</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_ALL -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_ALL">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Anna-Lena Lamprecht</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_DS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Daniel Schiffner</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_IB -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_IB">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Git.UP"/>
+        <dc:title>Zusammenfassung Interview mit Ingo Börner</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_JJ -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_JJ">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Julia Jannsen</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_JK -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_JK">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Josie Koenig</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_MH -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_MH">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Melissa Harrison</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_MRM -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_MRM">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Menare Royal Makabi</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_MS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_MS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Michael Strieve</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_RDC -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_RDC">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Roberto di Cosmo</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_RY -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_RY">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Ramin Yahyapour</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_SS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_SS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Sven Stickroth</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_TD -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_TD">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Tim Dietrich</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_TH -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary_Interview_TH">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Summary"/>
+        <dc:title>Zusammenfassendes Interview mit Trent Hare</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TD -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TD">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Professor"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Physics"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_TD"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UP"/>
+        <foaf:mbox>tim.dietrich@uni-potsdam.de</foaf:mbox>
+        <foaf:name>Tim Dietrich</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TH -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TH">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Research_Data_Service_Employer"/>
+        <academicField rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Mathematics"/>
+        <wasInterviewedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Interview_TH"/>
+        <foaf:organisation rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/USGS"/>
+        <foaf:name>Trent Hare</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TH_Self_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TH_Self_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Self_recorded"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=5b74fa36-b759-4aa7-bcb0-b0c400adbc8f</dc:identifier>
+        <dc:title>Self Recorded Video of the Interview with Trent Hare</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TH_Zoom_Record -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/TH_Zoom_Record">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Zoom_Record"/>
+        <storedIn rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/Panopto/Pages/Viewer.aspx?id=b734d7aa-f9c3-45c9-b3a9-b0ce00ed1ca2</dc:identifier>
+        <dc:title>Zoom Record of the Interview with Trent Hare</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UDE -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UDE">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/University"/>
+        <dc:title xml:lang="en">University of Duisburg-Essen</dc:title>
+        <dc:title xml:lang="de">Universität Duisburg-Essen</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UP -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UP">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/University"/>
+        <dc:title xml:lang="en">University of Potsdam</dc:title>
+        <dc:title xml:lang="de">Universität Potsdam</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UPC -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/UPC">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/University"/>
+        <dc:title xml:lang="de">Universität Paris Cité</dc:title>
+        <dc:title xml:lang="en">Université Paris Cité</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/USGS -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/USGS">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Scientific_Society"/>
+        <dc:title xml:lang="en">USGS Astrogeology Science Center</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Video.UP">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Storage_Destination"/>
+        <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://videoup.uni-potsdam.de/</dc:identifier>
+        <dc:title>Video.UP</dc:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/questionnaire_01">
+        <rdf:type rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Questionnaire"/>
+        <hasQuestionblock rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Establish_RDM"/>
+        <hasQuestionblock rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Improve_RDM"/>
+        <hasQuestionblock rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Intro_Person"/>
+        <hasQuestionblock rdf:resource="http://www.nfdixcs.de/community/ontologies/GoodPracticesRDSM/Practice_RDM"/>
+        <dc:title xml:lang="en">Research Data &amp; Software Management Case Studies - Interview Guideline</dc:title>
+        <dc:title xml:lang="de">Research Data &amp; Software Management Case Studies - Interview Leitfaden</dc:title>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
